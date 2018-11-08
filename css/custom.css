@@ -21,7 +21,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro {
-    background-color: white;
+    background: url('../img/NY1.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    display: table;
+}
+
+.intro-container {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .loader-title {
@@ -30,8 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article.intro-preview {
-    padding-top: 8em;
-    padding-bottom: 4em;    
     font-size: 20px;
     font-family: cursive;
     text-align: justify;
@@ -51,6 +57,7 @@ article.biografy {
     }
 
     article.intro-preview {
+        padding-top: 4em;
         padding-left: 2em;
         padding-right: 2em;    
     }
@@ -94,6 +101,23 @@ article.biografy {
 
 .map {
     padding-top:20px;
+}
+
+.carousel-inner > .item {
+    height: 100vh;
+}
+  
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
 .loader {
