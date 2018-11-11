@@ -16,8 +16,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #0080ff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e41d37;
+    font-family: cursive;
 }
 
 .intro {
@@ -52,33 +52,11 @@ article.biografy {
 }
 
 .carousel-inner > .item {
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
 }
 
-@media only screen and (max-width : 1200px) {
-    article.biografy {
-        margin-top: 30px;
-    }
 
-    article.intro-preview {
-        padding-top: 4em;
-        padding-left: 2em;
-        padding-right: 2em;    
-    }
-
-    .info .profile-image {
-        text-align: center;
-    }
-
-    .info-row {
-        background: white;
-    }
-
-    .carousel-inner > .item {
-        height: 30vh;
-    }
-}
 
 .info h3 {
     text-align: center;
@@ -97,7 +75,7 @@ article.biografy {
 }
 
 .contact-info i {
-    color: #0080ff;
+    color: #e41d37;
 }
 
 .contacts {
@@ -163,21 +141,82 @@ hr {
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    z-index: 1;
-}
-
 .subject-title {
     position: absolute;
     top: 10%;
-    left: 10%;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-family: cursive;
     z-index:1;
+    opacity: 0;
+
+}
+
+.subject-description {
+    position: absolute;
+    top: 30%;
+    color: white;
+    font-size: 35px;
+    font-family: cursive;
+    z-index:1;
+    opacity: 0;
+}
+
+.subject-description ul {
+    list-style: none;
+}
+
+.animate-title {
+    opacity: 1;
+    -webkit-animation-name: inByLeft;
+    animation-name: inByLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animate-description {
+    opacity: 1;
+    -webkit-animation-name: inByRight;
+    animation-name: inByRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media only screen and (max-width : 1200px) {
+    article.biografy {
+        margin-top: 30px;
+    }
+
+    article.intro-preview {
+        padding-top: 4em;
+        padding-left: 2em;
+        padding-right: 2em;    
+    }
+
+    .info .profile-image {
+        text-align: center;
+    }
+
+    .info-row {
+        background: white;
+    }
+
+    .carousel-inner > .item {
+        height: 30vh;
+    }
+
+    .subject-title {
+        font-size: 25px;
+    }
+    
+    .subject-description {
+        top: 30%;
+        font-size: 10px;
+    }
 }
 
 @-webkit-keyframes fadeOut {
@@ -198,4 +237,24 @@ hr {
  @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@-webkit-keyframes inByLeft {
+    0% {left: -100%;}
+    100% {left: 10%;}
+}
+ 
+ @keyframes inByLeft {
+    0% {left: -100%;}
+    100% {left: 10%;}
+}
+
+@-webkit-keyframes inByRight {
+    0% {right: -100%;}
+    100% {right: 30%;}
+}
+ 
+ @keyframes inByRight {
+    0% {right: -100%;}
+    100% {right: 30%;}
 }
