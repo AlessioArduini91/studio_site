@@ -16,15 +16,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #e41d37;
-    font-family: cursive;
+    color: #4487df;
+    font-family: 'Alegreya', serif;
 }
 
 .intro {
-    background: url('../img/copertina_opacity.jpg') no-repeat fixed;
+    background-image: url('../img/copertina_opacity.jpg');
     background-size: cover;
     height: 100vh;
     display: table;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .intro-container {
@@ -39,14 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 
 article.intro-preview {
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     text-align: justify;
 }
 
 article.biografy {
     padding: 4em;
     font-size: 16px;
-    font-family: cursive;
+    font-family: 'Alegreya', serif;
     text-align: justify;
     background-color: white;
 }
@@ -75,7 +77,7 @@ article.biografy {
 }
 
 .contact-info i {
-    color: #e41d37;
+    color: #4487df;
 }
 
 .contacts {
@@ -146,7 +148,7 @@ hr {
     top: 10%;
     color: white;
     font-size: 40px;
-    font-family: cursive;
+    font-family: 'Alegreya', serif;
     z-index:1;
     opacity: 0;
 
@@ -157,7 +159,7 @@ hr {
     top: 30%;
     color: white;
     font-size: 35px;
-    font-family: cursive;
+    font-family: 'Alegreya', serif;
     z-index:1;
     opacity: 0;
 }
@@ -187,6 +189,10 @@ hr {
 }
 
 @media only screen and (max-width : 1200px) {
+    .intro {
+        background-attachment: initial;
+    }
+
     article.biografy {
         margin-top: 30px;
     }
@@ -206,7 +212,7 @@ hr {
     }
 
     .carousel-inner > .item {
-        height: 30vh;
+        height: 40vh;
     }
 
     .subject-title {
@@ -215,7 +221,7 @@ hr {
     
     .subject-description {
         top: 30%;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 

@@ -23,7 +23,8 @@ $(document).ready(function () {
                 $('.subject-title').find('p').text("Diritto di Famiglia");
                 $('.subject-description').find('ul').html('<li>Separazioni e divorzi</li>' +
                     '<li>Amministrazioni di Sostegno</li>' +
-                    '<li>Successioni Ereditarie e Divisioni Immobiliari</li>');
+                    '<li>Successioni Ereditarie </li>' +
+                    '<li>Divisioni Immobiliari</li>');
                 break;
             case 'second':
                 $('.subject-title').find('p').text("Proprietà e Possesso");
