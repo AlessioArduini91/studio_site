@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro {
-    background: url('../img/NY1.jpg') no-repeat fixed;
+    background: url('../img/copertina_opacity.jpg') no-repeat fixed;
     background-size: cover;
     height: 100vh;
     display: table;
@@ -170,6 +170,15 @@ hr {
     z-index: 1;
 }
 
+.subject-title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    z-index:1;
+}
 
 @-webkit-keyframes fadeOut {
     0% {opacity: 1;}
