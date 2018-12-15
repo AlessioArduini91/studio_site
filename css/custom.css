@@ -57,7 +57,7 @@ article.biografy {
     width: 100vw;
 }
 
-.info h3 {
+.info h2 {
     text-align: center;
 }
 
@@ -67,6 +67,13 @@ article.biografy {
 
 .info-list {
     list-style: none;
+    padding-left: 0px;
+}
+
+.info-list > li {
+    margin-top: 10px;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
 .contact-info {
@@ -188,7 +195,13 @@ hr {
     padding-right: 0px;
 }
 
-@media only screen and (max-width : 1200px) {
+.row-section {
+    background: url('../img/copertina_opacity.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+@media only screen and (max-width : 767px) {
 
     article.biografy {
         margin-top: 30px;
@@ -206,6 +219,11 @@ hr {
 
     .info-row {
         background: white;
+    }
+
+    .info-list > li {
+        font-size: 10px;
+        
     }
 
     .carousel-inner > .item {

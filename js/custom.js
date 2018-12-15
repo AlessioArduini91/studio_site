@@ -17,24 +17,19 @@ $(document).ready(function () {
         description.parentNode.replaceChild(newDescription, description);
         switch (e.relatedTarget.id) {
             case 'first':
-                $('.subject-title').find('p').text("Diritto di Famiglia");
-                $('.subject-description').find('ul').html('<li>Separazioni e divorzi</li>' +
-                    '<li>Amministrazioni di Sostegno</li>' +
-                    '<li>Successioni Ereditarie </li>' +
-                    '<li>Divisioni Immobiliari</li>');
+                $('.subject-title').find('p').text("Aree di Attività (1/2)");
+                $('.subject-description').find('ul').html('<li>Diritto di famiglia</li>' +
+                    '<li>Amministrazione di Sostegno</li>' +
+                    '<li>Successioni e Donazioni</li>' +
+                    '<li>Obbligazioni e Contratti</li>');
                 break;
             case 'second':
-                $('.subject-title').find('p').text("Proprietà e Possesso");
-                $('.subject-description').find('ul').html('<li>Usucapione</li>' +
-                    '<li>Servitù</li>');
-                break;
-            case 'third':
-                $('.subject-title').find('p').text("Contratti e obbligazioni");
-                $('.subject-description').find('ul').html('<li>Obbligazioni</li>' +
-                    '<li>Contratti di Locazione</li>' +
-                    '<li>Contratti di Appalto</li>' +
-                    '<li>Recupero Crediti ed Esecuzioni</li>' +
-                    '<li>Contratti di Vendita</li>');
+                $('.subject-title').find('p').text("Aree di Attività (2/2)");
+                $('.subject-description').find('ul').html('<li>Proprietà e Diritti Reali</li>' +
+                    '<li>Locazione e Procedimenti di Sfratto</li>' +
+                    '<li>Comunione e Condominio</li>' +
+                    '<li>Responsabilità Medica</li>' +
+                    '<li>Infortunistica Stradale</li>');
                 break;
             default:
                 break;
