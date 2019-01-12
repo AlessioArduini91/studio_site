@@ -218,8 +218,7 @@ hr {
     }
 
     .info-list > li {
-        font-size: 10px;
-        
+        font-size: 15px;
     }
 
     .info-row {
@@ -279,10 +278,10 @@ hr {
 
 @-webkit-keyframes inByRight {
     0% {right: -100%;}
-    100% {right: 30%;}
+    100% {right: 25%;}
 }
  
  @keyframes inByRight {
     0% {right: -100%;}
-    100% {right: 30%;}
+    100% {right: 25%;}
 }

@@ -1,8 +1,13 @@
 $(document).ready(function () {
 
     var windowHeight;
+    var customNavbar = $("#customNavbar");
 
     init();
+    
+    customNavbar.on("click", "a", null, function () {
+        customNavbar.collapse('hide');
+    });
 
     $('#studyCarousel').carousel({
         interval: false
@@ -36,11 +41,7 @@ $(document).ready(function () {
         }
     });
 
-
-
 });
-
-
 
 function init() {
     windowHeight = window.innerHeight;
