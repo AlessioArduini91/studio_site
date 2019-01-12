@@ -1,7 +1,7 @@
 
 body {
     background: -webkit-linear-gradient(-45deg, rgb(242,249,254) 86%,rgb(199,229,249) 100%);
-    background: linear-gradient(135deg, rgb(242,249,254) 86%,rgb(199,229,249) 100%);
+    background: linear-gradient(135deg, rgb(242,249,254) 86%,rgb(199,229,249) 100%);    
 }
 
 .main {
@@ -57,8 +57,19 @@ article.biografy {
     width: 100vw;
 }
 
-.info h1,h2,h3 {
+.info-section h1,h2,h3 {
     text-align: center;
+}
+
+.no-margin-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.info-section {
+    background: url('../img/copertina_opacity.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .info-title {
@@ -89,7 +100,7 @@ article.biografy {
     background: white;
 }
 
-.map {
+.row-summary {
     padding-top:20px;
 }
   
@@ -195,14 +206,16 @@ hr {
     padding-right: 0px;
 }
 
-.row-section {
+/*.row-section {
     background: url('../img/copertina_opacity.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
-}
+}*/
 
 .profile-image {
     border: 10px solid rgb(63, 57, 57);
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width : 767px) {
@@ -235,7 +248,11 @@ hr {
     
     .subject-description {
         top: 30%;
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .image-container {
+        text-align: center;
     }
 }
 
@@ -243,7 +260,15 @@ hr {
     .carousel-inner > .item {
         height: 85vh;
     }
-  }
+}
+
+@media screen and (orientation: landscape) and (min-width : 992px){
+    .profile-image {        
+        width: 80%;
+        height: 80%;
+        margin-bottom: 30px;
+    }
+}
   
 
 @-webkit-keyframes fadeOut {
