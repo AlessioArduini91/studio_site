@@ -256,9 +256,15 @@ hr {
     }
 }
 
+@media only screen and (max-width : 1200px) {
+    .carousel-inner > .item {
+        height: 40vh;
+    }
+}
+
 @media screen and (orientation: landscape) and (max-width : 1200px){
     .carousel-inner > .item {
-        height: 85vh;
+        height: 40vh;
     }
 }
 

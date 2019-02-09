@@ -6,7 +6,10 @@ $(document).ready(function () {
     init();
     
     customNavbar.on("click", "a", null, function () {
-        customNavbar.collapse('hide');
+        customNavbar.collapse('hide'); 
+        setTimeout(function() {
+            $('.navbar').hide();   
+        }, 100);
     });
 
     $('#studyCarousel').carousel({
@@ -52,6 +55,11 @@ function init() {
 function addEventHandlers() {
     window.addEventListener('scroll', checkPosition);
     window.addEventListener('resize', init);
+    window.onscroll = function (e) {  
+        setTimeout(function() {
+            $('.navbar').show();
+        }, 50);
+    } 
 }
 
 function checkPosition() {
